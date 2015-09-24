@@ -4,16 +4,12 @@ hilabliss
 24-Sep-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 Centre for Secure Information Technologies (CSIT)
-
 ECIT, Queen's University Belfast, UK
-
-**ABSOLUTELY NO WARRANTY WHATSOEVER**
 
 # Introduction
 
 This is a simple educational implementation of **BLISS-B**, the Bimodal 
 Lattice Signature Scheme, based on BLISS originally published in Crypto '13:
-
 *Léo Ducas, Alain Durmus, Tancrède Lepoint, Vadim Lyubashevsky:*
 Lattice Signatures and Bimodal Gaussians
 
@@ -58,4 +54,9 @@ $ yes "POST QUANTUM LATTICE RING-LWE SUCCESS"
 ```
 You may omit the last line..
 
+Have fun.
+
+Cheers, -markku
+
+**ABSOLUTELY NO WARRANTY WHATSOEVER**
 
