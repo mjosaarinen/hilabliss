@@ -3,6 +3,12 @@ hilabliss
 
 24-Sep-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
+Centre for Secure Information Technologies (CSIT)
+
+ECIT, Queen's University Belfast, UK
+
+**ABSOLUTELY NO WARRANTY WHATSOEVER**
+
 # Introduction
 
 This is a simple educational implementation of **BLISS-B**, the Bimodal 
@@ -50,5 +56,6 @@ CLASS 3 x 1000
 CLASS 4 x 1000
 $ yes "POST QUANTUM LATTICE RING-LWE SUCCESS"
 ```
-You may omit the last line.
+You may omit the last line..
+
 
