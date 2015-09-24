@@ -31,6 +31,8 @@ schemes, apart from the couple of caveats I will tell you about.
 of precision however. This is basically a demonstrator.
 * A semi-secure PRNG called "notrand" for completeness, also using SHA3.
 * A test driver.
+* Not super fast.
+* Probably some weird bugs. This is the very v0.0 initial release.
 
 # Compiling and running
 
