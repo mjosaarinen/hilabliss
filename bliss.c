@@ -216,6 +216,14 @@ bliss_privkey_t *bliss_privkey_gen(int set)
         ntt32_xmu(priv->a, p->n, p->q, priv->a, p->w);
         ntt32_fft(priv->a, p->n, p->q, p->w);
 
+        // normalize a
+        for (i = 0; i < p->n; i++) {
+            x = priv->a[i] % p->q;
+            if (x < 0)
+                x += p->q;
+            priv->a[i] = x;
+        }
+
         free(t);
         return priv;
     }
