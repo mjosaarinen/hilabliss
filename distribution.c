@@ -75,24 +75,3 @@ int32_t gauss_sample(int set)
     return x & 1 ? a : -a;
 }
 
-// gaussian Sampling old skool
-
-void gaussian_vecs(int32_t x[], int32_t y[], int n, double sigma)
-{
-    int i;
-    double t, u, s;
-
-    sigma /= sqrt(2.0);
-    for (i = 0; i < n; i++) {
-        do {
-            t = notrand() - 0.5;
-            u = notrand() - 0.5;
-            s = t * t + u * u;
-        } while (s >= 0.25 || s == 0.0);
-        s *= 4.0;
-        s = sigma * sqrt(-log(s) / s);
-        x[i] = (int) round(s * t);
-        y[i] = (int) round(s * u);
-    }
-}
-
