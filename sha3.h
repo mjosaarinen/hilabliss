@@ -1,5 +1,5 @@
 // sha3.h
-// 19-Nov-11  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 19-Nov-11  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 #ifndef SHA3_H
 #define SHA3_H

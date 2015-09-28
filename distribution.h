@@ -1,5 +1,5 @@
 // distribution.h
-// 22-Sep-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 22-Sep-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 #ifndef DISTRIBUTION_H
 #define DISTRIBUTION_H

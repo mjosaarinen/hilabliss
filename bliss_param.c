@@ -1,5 +1,5 @@
 // bliss_param.c
-// 20-Jun-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 20-Jun-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 #include "bliss.h"
 

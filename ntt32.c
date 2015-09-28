@@ -1,5 +1,5 @@
 // ntt32.c
-// 09-Jun-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 09-Jun-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 // Number-Theoretic Transforms on a max 31-bit q value
 

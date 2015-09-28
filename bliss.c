@@ -1,5 +1,5 @@
 // bliss.c
-// 18-Jun-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 18-Jun-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 #include <stdlib.h>
 #include <string.h>

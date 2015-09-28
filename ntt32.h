@@ -1,5 +1,5 @@
 // ntt32.h
-// 06-May-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 06-May-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 #ifndef NTT32_H
 #define NTT32_H

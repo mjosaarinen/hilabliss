@@ -1,5 +1,5 @@
 // main.c
-// 06-May-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 06-May-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 #include <stdio.h>
 #include <stdlib.h>

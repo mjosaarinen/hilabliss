@@ -1,7 +1,7 @@
 // sha3.c
-// 19-Nov-11  Markku-Juhani O. Saarinen <mjos@iki.fi>
-// A baseline Keccak (3rd round) implementation.
+// 19-Nov-11  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
+// A baseline Keccak (3rd round) implementation.
 // Revised 07-Aug-15 to match with official release of FIPS PUB 202
 
 #include "sha3.h"

@@ -1,5 +1,5 @@
 // notrandom.h
-// 24-Sep-15  Markku-Juhani O. Saarinen <mjos@iki.fi>
+// 24-Sep-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 // This is a pretend-secure random number generator
 
 #ifndef NOTRANDOM_H
