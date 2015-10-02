@@ -28,7 +28,7 @@ schemes, apart from the couple of caveats I will tell you about.
 * SHA3 for hashing and random oracle stuff. 
 * Number Theoretic Transforms for negacyclic rings.
 * A binary-search Discrete Gaussian sampler, which only has 64 bits
-of precision however. This is basically a demonstrator.
+of precision however. See http://eprint.iacr.org/2015/953
 * A semi-secure PRNG called "notrand" for completeness, also using SHA3.
 * A test driver.
 * Not super fast.
