@@ -2,8 +2,8 @@
 # 09-Jun-15  Markku-Juhani O. Saarinen <m.saarinen@qub.ac.uk>
 
 BIN	= hila
-OBJS	= ntt32.o bliss.o bliss_param.o sha3.o main.o distribution.o \
-	notrandom.o
+OBJS	= ntt32.o distribution.o notrandom.o sha3.o main.o \
+	bliss.o bliss_param.o pubpriv.o
 DIST	= hilabliss
 
 CC	= gcc

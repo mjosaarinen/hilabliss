@@ -19,9 +19,9 @@ typedef struct {
     int b_l2;                               // L2 norm
     int nz1;                                // nonzero +-1
     int nz2;                                // nonzero +-2
-    int pmax;                               // derived from nz1, nz2, n, kappa
-    int sig;                                // standard deviation
-    double m;                               // repetition rate
+    int pmax;                               // derived from nt, nz2, n, kappa
+    long double sig;                        // standard deviation
+    long double m;                          // repetition rate
     const int *w;                           // n roots of unity (mod q)
     const int *r;                           // w[i]/n (mod q)
 } bliss_param_t;
@@ -33,8 +33,8 @@ extern const bliss_param_t bliss_param[];   // standard types
 
 typedef struct {
     int set;                                // parameter set
-    int *z1;                                // signature z1
-    int *z2d;                               // signature z2d
+    int *t;                                 // signature t
+    int *z;                                 // signature z
     int *c_idx;                             // signature oracle indeces for c
 } bliss_signature_t;
 
@@ -54,9 +54,11 @@ typedef struct {
     int *a;                                 // NTT of f/g
 } bliss_pubkey_t;
 
+// prototypes; helper functions
 
+int vecabsmax(const int32_t v[], int n);
+int vecscalar(const int32_t t[], const int32_t u[], int n);
 
-// prototypes
 
 // Random oracle.
 int bliss_c_oracle(int *c_idx, int kappa,
