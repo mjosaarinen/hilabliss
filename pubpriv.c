@@ -191,13 +191,12 @@ bliss_signature_t *bliss_sign(const bliss_privkey_t *priv,
         // round and drop
         for (i = 0; i < p->n; i++) {
 
-//          tmp = ((p->q + 1) * v[i] + u[i]) % (p->q * 2);
-            tmp = v[i];
+            tmp = v[i]; // old: tmp = ((p->q + 1) * v[i] + u[i]) % (p->q * 2);
             if (tmp & 1)
                 tmp += p->q;
             tmp = (tmp + u[i]) % (2 * p->q);
             if (tmp < 0)
-                tmp += (p->q * 2);
+                tmp += (2 * p->q);
             v[i] = tmp;
             z[i] = ((tmp + (1 << (p->d - 1))) >> p->d) % p->p;
         }
@@ -312,8 +311,7 @@ int bliss_verify(const bliss_signature_t *sign,
 
     // verification magic
     for (i = 0; i < p->n; i++) {
-//        v[i] = ((p->q + 1) * v[i]) % (2 * p->q);
-        if (v[i] & 1)
+        if (v[i] & 1)       // old: v[i] = ((p->q + 1) * v[i]) % (2 * p->q);
             v[i] += p->q;
     }
 
