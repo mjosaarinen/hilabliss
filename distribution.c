@@ -30,10 +30,15 @@ void gauss_gen_cdf(uint64_t cdf[], long double sigma, int n)
     e = -0.5L / (sigma * sigma);
     s = 0.5L * d;
     cdf[0] = 0;
-    for (i = 1; i < n; i++) {
+    for (i = 1; i < n - 1; i++) {
         cdf[i] = s;
+        if (cdf[i] == 0)        // overflow
+            break;
         s += d * expl(e * ((long double) (i*i)));
     }
+    for (; i < n; i++) {
+        cdf[i] = 0xFFFFFFFFFFFFFFFF;
+    }    
 }
 
 void gauss_init()
