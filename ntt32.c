@@ -3,7 +3,6 @@
 
 // Number-Theoretic Transforms on a max 31-bit q value
 
-#include <stdlib.h>
 #include "ntt32.h"
 
 // Basic arithmetic primitives
