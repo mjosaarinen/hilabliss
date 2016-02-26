@@ -25,16 +25,6 @@ void ntt32_xmu(int32_t v[], size_t n, int32_t q,
 void ntt32_cmu(int32_t v[], size_t n, int32_t q,
     const int32_t t[], int32_t c);
 
-// Negacyclic polynomial multiplication  v = n * a * b (mod 2^n + 1).
-// Return nonzero on failure.
-int ntt32_npm(int32_t v[], size_t n, int32_t q,
-    const int32_t a[], const int32_t b[], const int32_t w[]);
-
-// Negacyclic polynomial division  v = n * a / b (mod 2^n + 1).
-// Return nonzero on failure.
-int ntt32_npd(int32_t v[], size_t n, int32_t q,
-    const int32_t a[], const int32_t b[], const int32_t w[]);
-
 // Compute x^e (mod n).
 int32_t ntt32_pwr(int32_t x, int32_t e, int32_t n);
 
